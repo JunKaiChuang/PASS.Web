@@ -1,0 +1,45 @@
+﻿@{
+    Layout = "~/Views/Shared/_LayoutAfterLogin.cshtml";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Course Selection Page</title>
+</head>
+<style>
+    .font-set {
+        color: darkgreen;
+    }
+
+    table {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    th {
+        align: center;
+    }
+</style>
+<body>
+    <script src="~/Scripts/jquery-1.12.4.min.js"></script>
+    <script src="~/Scripts/jquery.redirect.js"></script>
+    <script src="~/Scripts/CourseSelection.js"></script>
+
+    <script type="text/javascript">
+        var userInfo = '@Session["UserInfo"]';
+
+    </script>
+
+    <div align="center">
+        <h1 align="center" class="font-set">課程選擇</h1>
+        <div align="center">
+            <div id="here_table"></div>
+        </div>
+    </div>
+
+    
+</body>
+</html>

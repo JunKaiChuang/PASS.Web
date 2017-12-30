@@ -1,0 +1,42 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<!DOCTYPE html>
+<html lang="zh-tw">
+<head>
+    <meta charset="UTF-8">
+    <title>PASS</title>
+</head>
+<style>
+    .font-set {
+        color: darkgreen;
+    }
+
+    legend {
+        margin: auto;
+    }
+</style>
+<body>    
+    <script src="~/Scripts/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="~/Scripts/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="~/Scripts/jquery.redirect.js"></script>
+    <script type="text/javascript" src="~/Scripts/index.js"></script>
+    <br />
+    <form id="form1" name="form1">
+        <fieldset style="color:burlywood; border:solid;">
+            <legend style="font-size: 30px; color:darkgreen;font-family:'Times New Roman', Times, serif;">Log in</legend>
+
+
+            <label class="font-set">ID</label><br>
+            <input type="text" name="id" autofocus autocomplete="on" maxlength="9" required placeholder="請輸入學號" /><br>
+
+            <label class="font-set">Password</label><br />
+            <input type="password" name="password" maxlength="9" required placeholder="請輸入密碼" /><br>
+            
+            <input type="button" id="loginBtn" value="Login">
+            <button type="reset">reset</button>
+        </fieldset>
+    </form>
+</body>
+</html>
